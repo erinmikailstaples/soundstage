@@ -1,0 +1,32 @@
+[project]
+name = "soundstage-backend"
+version = "0.1.0"
+description = "Dynamic Soundboard Backend for Streamers"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "pydantic",
+    "pydantic-settings",
+    "sounddevice",
+    "numpy",
+    "httpx",
+    "websockets",
+    "python-multipart",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+    "ruff",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = []

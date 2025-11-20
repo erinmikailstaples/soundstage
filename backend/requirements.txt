@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+sounddevice
+numpy
+httpx
+websockets
+python-multipart
